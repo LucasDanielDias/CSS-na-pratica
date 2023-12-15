@@ -1,0 +1,79 @@
+.grid{
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 750px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+    
+}
+.gridI{
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 750px;
+    width: 100vw;
+    display: inline-grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+}
+.gridE1{
+    background-color: darkmagenta;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 750px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2,150px) 450px repeat(2,150px);
+    grid-template-rows:repeat(2,150px) 450px repeat(2,150px) ;
+}
+.gridE2{
+    background-color: aqua;
+    border: 1px solid darkred;
+    padding: 5px;
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,150px);
+}
+.gridE3{
+    background-color: aqua;
+    border: 1px solid darkred;
+    padding: 5px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(3,150px);
+}
+.item1{
+    background-color: darkblue;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#posicao1{
+    background-color: blue;
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+}
+#posicao2{
+    background-color: blue;
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+}
+.item2{
+    background-color: darkblue;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+.itens{
+    background-color: blue;
+}

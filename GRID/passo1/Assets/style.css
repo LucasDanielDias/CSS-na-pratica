@@ -48,6 +48,13 @@
     grid-template-columns: repeat(2,250px);
     grid-template-rows: repeat(3,150px);
 }
+.gridE4{
+    border: 1px dashed darkcyan;
+    padding: 0;
+    justify-content: center;
+    display: grid;
+    
+}
 .item1{
     background-color: darkblue;
     color: white;
@@ -76,4 +83,9 @@
 }
 .itens{
     background-color: blue;
+}
+.item{
+    background-color: lightcyan;
+    align-items: center;
+    justify-content: center;
 }

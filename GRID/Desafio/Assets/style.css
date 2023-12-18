@@ -1,0 +1,63 @@
+body{
+    background-color:snow;
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0;
+    align-items:center;
+    height: 50px;
+    width: 100vw;
+    background-color: blueviolet;
+}
+.iconsY{
+    display: flex;
+    align-items: center;
+}
+.Pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+#BarrP{
+    width: 500px;
+}
+.InfoP{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.estrutura{
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-areas:"sidebar mostruario mostruario mostruario mostruario" 
+         "sidebar mostruario mostruario mostruario mostruario"
+         "sidebar mostruario mostruario mostruario mostruario";
+         grid-template-columns: 1fr 5fr;
+         grid-template-rows: 1fr 1fr 1fr;
+
+}
+#sidebar{
+    grid-area: sidebar;
+    background-color: blue;
+}
+#sidebar ul{
+    list-style: none;
+    height: 100vh;
+}
+#mostruario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: mostruario;
+    background-color: brown;
+    height: 100vh;
+}

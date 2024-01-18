@@ -203,6 +203,7 @@ footer{
     }
     .Sflex{
         display: block;
+        text-align: start;
         margin: 15px;
     }
     #titulo{

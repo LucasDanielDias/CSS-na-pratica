@@ -86,10 +86,12 @@ section{
     justify-content: space-evenly;
     padding: 0;
     width: 100vw;
+    margin: 0;
 }
 #secG{
     background-color: #F6F6F6;
     width: 100vw;
+    margin: 0;
 }
 .Sflex h1{
     font-size: 40px;
@@ -105,6 +107,7 @@ section{
     display: flex;
     align-items: center;
     width: 100vw;
+    margin: 0;
 }
 .centro{
     font-size: 16px;

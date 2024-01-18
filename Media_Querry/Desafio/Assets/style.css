@@ -5,13 +5,19 @@ body{
     
 }
 header{
-    width: 1280px;
+    color: white;
+    display: inline-flex;
+    width: 100vw;
     height: 459px;
     flex-shrink: 0;
     background-image: url("./Images/Header_Background.jpg");
-    color: white; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: auto;
 }
 .Fontguy{
     font-family: 'Luckiest Guy', cursive;
@@ -20,21 +26,105 @@ header{
     font-style: normal;
     line-height: normal;
     text-align: center;
-    
+    margin: 0;
 }
 .flex{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 .flexCollun{
+    margin: auto;
     display: inline-flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    padding: 0;
 }
 .fontwhite{
+    padding: 0%;
+    margin: 0%;
     color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    width: 60%;
+    font-size: 1.2rem;
 
 }
+.DW{
+    width: 205px;
+    height: 44px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 28px;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+.ON{
+    width: 281px;
+    height: 44px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 28px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+/*Fim do cabeçalho*/
+main{
+    display: block;
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.Sflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#secG{
+    background-color: #F6F6F6;
+}
+.Sflex h1{
+    font-size: 40px;
+}
+.Conteudo{
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    align-items: center;
+}
+.bloquinho{
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+}
+.centro{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.reduct{
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+}
+footer{
+    display: flex;
+    padding: 35px 0px 36px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #23272A;
+}
+.texto{
+    width: 75%;
+}
+
+
+
+

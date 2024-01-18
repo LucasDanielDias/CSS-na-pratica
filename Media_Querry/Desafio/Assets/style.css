@@ -124,7 +124,154 @@ footer{
 .texto{
     width: 75%;
 }
+@media screen and (max-width:500px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    header{
+        color: white;
+        width: 100vw;
+        height: 339px;
+        flex-shrink: 0;
+        background-image: url("./Images/Header_Background.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        margin: 0; 
+        display: block;
+    }
+
+    .Fontguy{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 36px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        text-align: start;
+        margin: 0;
+        width: 100%;
+    }
+    .flex{
+        display: block;
+        align-items: start;
+    }
+    .flexCollun{
+        margin: 0;
+        display:block;
+        align-items: start;
+        padding: 0;
+    }
+    .fontwhite{
+        padding: 0%;
+        margin: 0%;
+        color: white;
+        text-align: start;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        font-size:1rem;
+        margin: 20px 0px 20px 0px;
+    }
+    .DW{
+        width: 205px;
+        height: 44px;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 28px;
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .ON{
+        width: 281px;
+        height: 44px;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 28px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* ---------------------------------------------*/
+    main{
+        display: block;
+        text-align: center;
+    }
+    section{
+        display: block;
+        margin: 15px;
+    }
+    .Sflex{
+        display: block;
+        margin: 15px;
+    }
+    #titulo{
+        grid-area: titulo;
+    }
+    #te{
+        grid-area: te;
+    }
+    #imagemX{
+        grid-area: imagemX;
+    }
+    #secG{
+        display: grid;
+        grid-template-areas:
+        "imagemX" 
+        "titulo"
+        "te";
+        background-color: #F6F6F6;
+    }
+    .Sflex h1{
+        font-size: 26px;
+    }
+    .Conteudo{
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: start;
+        text-align: start;
+    }
+    .bloquinho{
+        background-color: #F6F6F6;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+    }
+    .bloquinho img{
+        background-color: #F6F6F6;
+        display: inline-flex;
+        align-items: start;
+        width: 100%;
+    }
+    .centro{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+    }
+    .reduct{
+        display: block;
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+    }
+    footer{
+        display: flex;
+        padding: 35px 0px 36px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        background: #23272A;
+    }
+    .texto{
+        width: 100%;
+    }
+    img{
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    }
+}
 
 
 

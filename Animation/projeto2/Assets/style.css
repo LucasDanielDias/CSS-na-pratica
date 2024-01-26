@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(#f76c6c,#3dddd5,#d33636) ;
+}
+div{
+    width: 250px;
+    height: 350px;
+    background-color:rgb(240, 255, 29);
+    margin: auto;
+    position:absolute ;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 5px;
+}
+div h1{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+ul li{
+    margin-top: 5px;
+    font-size: 18px;
+    background-color: chocolate;
+}
+ul li:hover{
+    scale: 1.2;
+    background-color:rgb(170, 89, 31) ;
+}
+ul li:has(input:checked){
+    background-color: rgb(55, 0, 255);
+    color: white;
+    text-decoration: line-through;
+}

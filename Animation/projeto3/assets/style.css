@@ -1,0 +1,71 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.quadradoA{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    animation: LadoA 5s infinite linear alternate;
+}
+.quadradoB{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    animation: LadoB 5s infinite linear alternate;
+}
+.quadradoC{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    animation: LadoC 1s infinite linear alternate;
+}
+@keyframes LadoA{
+    0%{
+        background-color: blue;
+        transform:translateY(-150px);
+    }
+    50%{
+        background-color: brown;
+        transform: translateY(300px);
+    }
+    100%{
+        background-color: aqua;
+        transform: translateY(-150px);
+    }
+
+}
+@keyframes LadoB{
+    0%{
+        background: linear-gradient(rgb(78, 87, 129),rgb(187, 70, 24),rgb(182, 190, 224));
+        transform:translateX(-900px);
+    }
+    50%{
+        background: linear-gradient(rgb(85, 85, 87),rgb(116, 5, 24),rgb(161, 170, 209));
+        transform: translateX(320px);
+    }
+    100%{
+        background: linear-gradient(rgb(40, 40, 53),rgb(81, 217, 241),rgb(4, 19, 87));
+        transform: translateX(-900px);
+    }
+
+}
+@keyframes LadoC{
+    0%{
+        background-color: burlywood;
+    }
+    100%{background-color: blueviolet;}
+}

@@ -2,85 +2,467 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Coffe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./Assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
-        <div class="container-fluid">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
 
-            <a class="navbar-brand" href="#"><img src="./Assets/images/Logo.png" alt="Logo my coffe"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Inicil</a>
-                    </li>
+      <a class="navbar-brand" href="#"><img src="./Assets/images/Logo.png" alt="Logo my coffe"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#abaut">Sobre nós</a>
-                    </li>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Inicil</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Cardápio</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#abaut">Sobre nós</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#local">Local</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Cardápio</a>
+          </li>
 
-            
-                </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#local">Local</a>
+          </li>
 
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
 
-            </div>
-        </div>
-    </nav>
-    <!--Carousel-->
-    <div id="carousel-coffee" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Late art">
-          </div>
-          <div class="carousel-item">
-            <img src="https://plus.unsplash.com/premium_photo-1674406102318-c9d362ad510b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHglQzMlQURjYXJhJTIwZGUlMjBjYWYlQzMlQTl8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="Caputchino">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Chá Servido">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    </div>
+  </nav>
+<main>
+  <!--Carousel-->
+  <div id="carousel-coffee" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="Late art">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1674406102318-c9d362ad510b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHglQzMlQURjYXJhJTIwZGUlMjBjYWYlQzMlQTl8ZW58MHx8MHx8fDA%3D"
+          class="d-block w-100" alt="Caputchino">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="Chá Servido">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Citação-->
+  <figure>
+    <blockquote class="blockquote mt-3 text-center">
+      <h3 class="fw-light fst-italic">Algumas bebidas podem aquecer mais que os corpos, mas támbém corração e alma.</h3>
+    </blockquote>
+    <figcaption class="blockquote-footer text-center">
+      Citado por <cite title="Source Title">My Coffee</cite>
+    </figcaption>
+  </figure>
+  <!--Cards informativos-->
+  <section id="about" class="container text-center">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D"
+                class="img-fluid rounded-start" alt="Arte late">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Baristas apaixonados pela arte</h5>
+                <p class="card-text">
+                  Baristas apaixonados pela arte não apenas buscam a excelência na preparação do café, mas também
+                  transformam cada xícara em uma expressão artística. Da moagem dos grãos ao desenho na espuma, esses
+                  entusiastas demonstram uma paixão palpável, elevando a experiência do café a uma forma de expressão
+                  única e emocional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D"
+                class="img-fluid rounded-start" alt="Café de qualidade">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Qualidade acima de tudo</h5>
+                <p class="card-text">Orientar os verdadeiros apaixonados por café, que buscam a perfeição em cada
+                  xícara. Desde a escolha dos grãos até a preparação meticulosa, esses baristas estão comprometidos em
+                  proporcionar uma experiência excepcional, destacando a importância de priorizar a qualidade no
+                  universo do café.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <!--Menu-->
+  <nav>
+    <div class="nav nav-tabs  " id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-espresso-tab" data-bs-toggle="tab" data-bs-target="#nav-espresso" type="button" role="tab" aria-controls="nav-espresso" aria-selected="true">espressos</button>
+      <button class="nav-link" id="nav-capuccino-tab" data-bs-toggle="tab" data-bs-target="#nav-capuccino" type="button" role="tab" aria-controls="nav-capuccino" aria-selected="false">capuccinos</button>
+      <button class="nav-link" id="nav-cha-tab" data-bs-toggle="tab" data-bs-target="#nav-cha" type="button" role="tab" aria-controls="nav-cha" aria-selected="false">chás</button>
+      <button class="nav-link" id="nav-bolo-tab" data-bs-toggle="tab" data-bs-target="#nav-bolo" type="button" role="tab" aria-controls="nav-bolo" aria-selected="false">Bolos</button>
+    </div>
+  </nav>
+  <div class="tab-content ms-2 mt-3" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-espresso" role="tabpanel" aria-labelledby="nav-espresso-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café/" class="card-img-top" alt="img aleatoria">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café&1/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café&2/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café&3/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café&4/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?café&6/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-capuccino" role="tabpanel" aria-labelledby="nav-capuccino-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino/" class="card-img-top" alt="img aleatoria">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&1/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&2/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&3/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&4/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&5/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?capuccino&6/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-cha" role="tabpanel" aria-labelledby="nav-cha-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás/" class="card-img-top" alt="img aleatoria">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&1/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&2/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&3/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&4/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&5/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&6/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?chás&7/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-bolo" role="tabpanel" aria-labelledby="nav-bolo-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo/" class="card-img-top" alt="img aleatoria">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&1/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&2/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&3/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&4/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&5/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&6/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-menu">
+            <img src="http://source.unsplash.com/random/?bolo&7/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo aleatorio</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal local-->
+  <!-- Button trigger modal -->
+  <section class="mt-5 text-center">
+    <button type="button" class="btn btn-dark  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Onde Posso encontrar
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Chega mais</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Estamos te esperando em rua marte n° 1298347645</p>
+            <div class="mapouter"><div class="gmap_canvas">
+            <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 300px; height: 500px;"></iframe>
+            </div></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Footer-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

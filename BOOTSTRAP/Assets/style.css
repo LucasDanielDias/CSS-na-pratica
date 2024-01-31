@@ -1,9 +1,12 @@
+html, body { max-width: 100%; overflow-x: hidden; }
 .navbar-brand img{
     width: 50px;
 }
 .carousel-item{
-    height: 500px
+    max-height: 50rem;
+    width: 100vw;
 }
+
 .carousel-item img{
     height: 100%;
     object-fit: cover;
@@ -12,7 +15,14 @@
 .carousel-item::before{
     content: "";
     height: 100%;
-    width: 100%;
-    background: linear-gradient(transparent, rgb(30,30,31));
+    width: 100vw;
+    background: linear-gradient(transparent, rgb(89, 89, 99));
     position: absolute;
 }
+main{
+    margin-top: 4.7rem;
+}
+.card-menu img{
+   height: 300px;
+}
+footer{color: rgb(146, 37, 37);}
